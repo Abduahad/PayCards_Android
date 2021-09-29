@@ -9,9 +9,12 @@ See live demo: [pay.cards](https://play.google.com/store/apps/details?id=cards.p
 * Add Maven URL for the pay.cards repository to your project `build.gradle` file.
 
     ```gradle
-    repositories {
-         maven { url "http://pay.cards/maven" }
-    }
+   allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
     ```
 
 
@@ -19,7 +22,7 @@ See live demo: [pay.cards](https://play.google.com/store/apps/details?id=cards.p
 
     ```gradle
     dependencies {
-        implementation 'cards.pay:paycardsrecognizer:1.1.0'
+        implementation 'com.github.Abduahad:PayCards_Android:1.0'
     }
     ```
 
